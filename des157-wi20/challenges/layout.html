@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenges</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Serif:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML and CSS Refresher Challenges</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HTML Basics</a></li>
+                <li><a href="cssbasics.html">CSS Basics</a></li>
+                <li><a href="layout.html">Page Layout</a></li>
+                <li><a href="responsive.html">Responsive Design</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2>Structure, Phrasing, and Display</h2>
+                <p>Inline elements in HTML are places the content in a line next to each other within the block, and block elements places the entire content within a box. Some inline elements are: anchor, image, italicize, and time. Some block elements are unorder/ordered lists, nav, footer, and main.</p>
+                <p>In CSS, the display property can be set to: none, inline, block, and inline-block. Display none can show and hide elements without removing any code. Display inline places the content next to each other in a line, and display block sets the element in a box that spans the entire width of the page. However, it sets the box on top of each other rather than next to each other in inline. Display inline-block puts the content next to each other, but it creates a box around each element. Both inline and block are commonly used in the navigation.</p>
+            </article>
+
+            <article>
+                <h2>Box Model</h2>
+                <img src="images/boxmodel.svg" alt="box model" width="600px">
+                <p>The CSS box model includes the margin, border, and padding that surrounds each element in HTML. The padding surrounds the content, and it will create a transparent area around the content. Having more padding will add space between the border and content, which will change the height and width of the content. The border surrounds the padding and content. The margin surrounds the border, padding, and content. This means that it will create transparent space around the border, which will adjust the width and height of the content inside.</p>
+                <p>Box-sizing allows the padding and border to be included into the total width and height. This ensures that the elements are set to the correct size.</p>
+            </article>
+
+            <article class="background-images">
+                <h2>Background Images</h2>
+                <p>Images can be added in HTML or CSS. Images in HTML are linked to the page using the img tag, and this will create a space in the webpage for the image. Adding an image to the CSS will add the image as a background, and it will be considered a style element rather than content on the webpage. </p>
+            </article>
+        </main>
+        
+        <footer>
+            <p>Page by Sue Pham</p>
+            <p>Checked by Genneviere Domingo and Wesley Sosa</p>
+            <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+        </footer>
+    </body>
+</html>

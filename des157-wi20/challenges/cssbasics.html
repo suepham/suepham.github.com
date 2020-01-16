@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenges</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Serif:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML and CSS Refresher Challenges</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HTML Basics</a></li>
+                <li><a href="cssbasics.html">CSS Basics</a></li>
+                <li><a href="layout.html">Page Layout</a></li>
+                <li><a href="responsive.html">Responsive Design</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2>Inheritance in CSS</h2>
+                <p>Inheritance in CSS is when a parent element has specified properties which then means that any elements inside the parent element (child element) will receive the same properties. For example, if a paragraph is inside an article, it will receive the properties applied to the article like font or font-size. Some elements with no inheritance properties are: width, margin, padding, background, etc.</p>
+            </article>
+
+            <article>
+                <h2>Specificity in CSS</h2>
+                <p>If an element has mulitple rules pointing to it, CSS will choose the rule that is more specific to the element. Using "class" or "id" points to elements directly, so when styling the element in CSS, it will apply the specific rule set rather than the general rule set. A compound selector is a chain of the elements in the HTML, and it narrows down the target element to style. A multiple selector allows the same rule to be applied to different elements, and it is separated by a comma to simplify the code. This is important in CSS because being more specific will create less problem and confusion with the elements as you style the webpage.</p>
+            </article>
+
+            <article>
+                <h2>ID and Class Attributes</h2>
+                <p>ID and Class attributes specifies certain elements to style in CSS. ID is indicated by a "#"" in CSS, and class is indicated by a "." in CSS. Class can be applied to multiple locations in the HTML, and it can be used to apply the same rules to any element with this attribute. However, ID can only be used once in HTML because it is the highest level of specificity, so in CSS, it would point directly to the element with this attribute. </p>
+            </article>
+        </main>
+        
+        <footer>
+            <p>Page by Sue Pham</p>
+            <p>Checked by Genneviere Domingo and Wesley Sosa</p>
+            <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Challenges</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Serif:400,700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>HTML and CSS Refresher Challenges</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">HTML Basics</a></li>
+                <li><a href="cssbasics.html">CSS Basics</a></li>
+                <li><a href="layout.html">Page Layout</a></li>
+                <li><a href="responsive.html">Responsive Design</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <article>
+                <h2>About Media Queries</h2>
+                <p>Media queries allows the layout or style of the webpage to change to fit the size of the device viewing the webpage. Min-width media queries will change the layout once the minimum amount of pixels is set, so if the screen is greater than the value set, it will change. As for max-width media queries, the layout will change once the maximum amount of pixels set is reached, so any screens less than the value set will have a different layout.</p>
+                <p>Since most users are mobile users than desktop users, it is important to design for the majority of the users first. Designing mobile first helps build the content for smaller screens first and then building up from it which is easier than trying to fit a lot of content into a small screen. </p>
+            </article>
+
+            <article>
+                <h2>Relative Units</h2>
+                <p>Relative units are used in web design to scale elements based on another property. The unit "em" is based on the "font-size" property, so if the font-size was set at 12px, 2em would double the font-size. The "%" unit is based on the parent element, which could include width, height, font-size, margin, etc. Similarly, the "vw" and "vh" are based on the width and height of the viewport. It scales the element based on the size of the screen which makes it allows the style of the web page to stay consistent across different device screens.</p>
+            </article>
+
+            <article>
+                <h2>Meta Viewport Tag</h2>
+                <p>The meta viewport tag is used for responsive design because it sets the maximum amount of pixels on a screen to be the maximum amount of pixels for the webpage. This prevents the screen from zooming out and showing a larger amount of pixels than the device screen.</p>
+                <p>When I viewed the web pages with and without the meta viewport tag, the responsive page design was different. With the meta viewport tag, the web page adjusted it's layout defined in the CSS page to fit the smaller screen. However, without the meta viewport tag, the web page did not adjust the content, and the smaller screen showed a zoomed out version of the web page that is seen on a larger computer screen.</p>
+            </article>
+        </main>
+        
+        <footer>
+            <p>Page by Sue Pham</p>
+            <p>Checked by Genneviere Domingo and Wesley Sosa</p>
+            <p><a href="http://validator.w3.org/check?uri=referer">Valid HTML</a></p>
+        </footer>
+    </body>
+</html>
