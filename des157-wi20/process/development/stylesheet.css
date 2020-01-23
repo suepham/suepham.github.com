@@ -1,0 +1,132 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+/************ navigation **************/
+nav {
+    margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: grey;
+	display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	display: inline;
+    border: solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    font-weight: 600;
+    border-color: rgb(204, 180, 47);
+}
+
+
+/************* body *************/
+
+header {
+    margin: auto;
+    width: 60%;
+    padding-bottom: 30px;
+}
+
+header div {
+    text-align: center;
+    margin: auto;
+}
+
+main {
+    width: 1000px;
+	padding: 20px;
+	padding-bottom: 40px;
+	background: white;
+	margin: auto;
+	display: block;
+	align-content: center;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    color: #5e5d5d;
+    border-bottom: solid;
+    border-color: rgb(204, 180, 47);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    font-size: 12pt;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20pt;
+    color: black;
+    margin-bottom: 5px;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+p {
+	margin: 1em;
+	line-height: 1.5em;
+    font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/************** footer ************/
+footer {
+    background-color: #5e5d5d;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(204, 180, 47);
+    font-family: 'Raleway', sans-serif;
+    margin: 10px;
+    line-height: 3em;
+}
