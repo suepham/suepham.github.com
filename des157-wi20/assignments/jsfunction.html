@@ -10,26 +10,45 @@
     <script>
         var animals = ["alligator", "rooster", "dragon", "cheetah", "whale", "eagle", "turtle", "ant", "elephant", "monkey"];
 
+        function greeting() {
+            var name = prompt("What is your name?", "");
+            console.log(`Hi ${name}!`);
+        }
+
         function checkNumber() {
             var randomAnimal = prompt("Enter any number between 1-10 for your spirit animal.", "");
 
-            if (parseInt(randomAnimal)) {
-                console.log(`Your spirit animal is: ${animals[randomInt(0, 10)]}`);
+            if (randomAnimal > 10){
+                console.log("Please enter an integer from 1-10.");
             }
-            else if (randomAnimal > 10) { 
-                console.log("Please enter an integer between 1-10."); 
-            } else {
-                console.log("Error: you did not enter an integer.");
+            else {
+                if (parseInt(randomAnimal)) {
+                    console.log(`Your spirit animal is: ${animals[randomInt(0, 10)]}.`);
+                }
+                else {
+                    console.log("Error: you did not enter an integer.");
+                }
             }
         }
 
         function randomInt(min, max) {
             return Math.floor((max - min + 1) * Math.random()) + min;
         }
-        
+
+        function listAnimals() {
+            var i = 0;
+            var text = "The possible animals are: ";
+
+            while (i<10){
+                text += `${animals[i]} `;
+                i++
+            }
+            console.log(text);
+        }
+
+        greeting();
         checkNumber();
-    
-    
+        listAnimals();
     </script>
 
 </body>
