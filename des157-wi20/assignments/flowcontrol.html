@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flow Control Experimentation</title>
+</head>
+<body>
+    <h1>Flow Control Experimentation</h1>
+
+    <script>
+    var meal = [];
+    var newFruit = "";
+    var newVegetable = "";
+
+    //prompts user to enter a fruit
+    var fruit = prompt("Enter a fruit:", "");
+    //adds input into meal array
+    meal[0] = fruit;
+
+    //capitalizes every other letter of the fruit
+    for (i=0; i<fruit.length; i++) {
+        if (i%2 === 0) {
+            newFruit += fruit.charAt(i).toUpperCase();
+        }
+        else {
+            newFruit += fruit.charAt(i);
+        }
+    }
+    console.log(newFruit);
+
+    //prompts user to enter a vegetable
+    var vegetable = prompt("Enter a vegetable:", "");
+    //adds input into meal array
+    meal[1] = vegetable;
+
+    //capitlaizes every other letter of the vegetable
+    for (i=0; i<vegetable.length; i++) {
+        if (i%2 === 0) {
+            newVegetable += vegetable.charAt(i).toUpperCase();
+        }
+        else {
+            newVegetable += vegetable.charAt(i);
+        }
+    }
+    console.log(newVegetable);
+
+    //calls the elements in the meal array
+    console.log(`You are eating ${meal[0]} and ${meal[1]}.`)
+
+    </script>
+    
+</body>
+</html>

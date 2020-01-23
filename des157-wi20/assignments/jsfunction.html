@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function Experimentation</title>
+</head>
+<body>
+    <h1>Function Experimentation</h1>
+
+    <script>
+        var animals = ["alligator", "rooster", "dragon", "cheetah", "whale", "eagle", "turtle", "ant", "elephant", "monkey"];
+
+        function checkNumber() {
+            var randomAnimal = prompt("Enter any number between 1-10 for your spirit animal.", "");
+
+            if (parseInt(randomAnimal)) {
+                console.log(`Your spirit animal is: ${animals[randomInt(0, 10)]}`);
+            }
+            else if (randomAnimal > 10) { 
+                console.log("Please enter an integer between 1-10."); 
+            } else {
+                console.log("Error: you did not enter an integer.");
+            }
+        }
+
+        function randomInt(min, max) {
+            return Math.floor((max - min + 1) * Math.random()) + min;
+        }
+        
+        checkNumber();
+    
+    
+    </script>
+
+</body>
+</html>
