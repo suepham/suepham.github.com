@@ -111,7 +111,7 @@ p {
 	font-weight: 400;
 }
 
-img {
+img, iframe {
     display: inline-block;
     margin: 30px;
 }
