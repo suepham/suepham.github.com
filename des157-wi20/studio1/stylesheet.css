@@ -1,0 +1,103 @@
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+/*********** body **********/
+
+body {
+    background-color: #faebd7;
+    margin: auto;
+    background-image: url(images/cup.svg);
+    background-repeat: no-repeat;
+    background-position: 75%;
+    background-size: 480px;
+}
+
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #ca7f68;
+    margin: 50px;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px;
+}
+
+div {
+    position: relative;
+    left: 55%;
+    top: 280px;
+}
+
+div p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #faebd7;
+    line-height: 1.5em;
+}
+
+/*********** form ************/
+
+form { 
+    margin: auto; 
+    padding-left: 60px;
+}
+
+
+input {
+    display: block;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    border: none;
+	border-bottom: 3px solid #646464;
+    background: transparent;
+    padding: 10px 0px 10px 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    outline: none;
+}
+    
+
+#sendbtn {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    background-color: #c39797;
+    padding: 15px 35px 15px 35px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #faebd7;
+}
+
+/************** footer ************/
+footer {
+    background-color: #ca7f68;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+footer p {
+    color: #faebd7;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: #ffb3b3;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    margin: 10px;
+    line-height: 3em;
+}
