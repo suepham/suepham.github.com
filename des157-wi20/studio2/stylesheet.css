@@ -1,0 +1,201 @@
+/*************** body *************/
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #ffab3d;
+}
+
+/************* slideshow **************/
+#content {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background-color: #545454;
+    display: flex;
+}
+
+#myimage {
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 40%;
+    height: 40%;
+}
+
+i {
+    color: white;
+    font-size: 80px;
+    position: relative;
+    padding-top: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#previous {
+    position: absolute;
+    left: 0;
+}
+
+#next {
+    position: absolute;
+    right: 0;
+}
+
+#info {
+    background-color: #928e8e;
+    width: 30%;
+    margin-left: 130px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+#info h2 {
+    color: #a1d678;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#info p {
+    font-weight: 300;
+    font-size: 14px;
+    color: white;
+    line-height: 2em;
+    padding: 20px;
+}
+
+#info a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffab3d;
+    padding: 20px;
+}
+
+/************* grid items ************/
+#items {
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+#items div {
+    border: #545454 solid 2px;
+    margin: 40px;
+}
+
+#items img {
+    width: 300px;
+    opacity: 1;
+    z-index: 0;
+}
+
+#items .center div {
+    border: none;
+    text-align: center;
+    position: absolute;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#items .center div p {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #ffab3d;
+}
+
+#items img:hover {
+    opacity: 0.2;
+}
+
+/************** footer ************/
+footer {
+    background-color: #ffab3d;
+    padding: 30px 30px 30px 30px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-weight: 400;
+}
+
+footer a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    margin: 10px;
+    line-height: 3em;
+}
+
+/****** Animation Styles ******/
+.show {
+    z-index: 1;
+}
+
+.hide {
+    display: none;
+}
+
+.fadeinimg {
+    animation: fadein 2s;
+}
+
+
+/********** mobile **********/
+@media only screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+
+    i {
+        font-size: 60px;
+        padding-top: 180px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #info {
+        width: 80%;
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+    #myimage {
+        padding-left: 20px;
+        padding-top: 100px;
+        padding-right: 50px;
+        width: 40%;
+    }
+
+    #info h2 {
+        font-size: 16px;
+    }
+
+    #info p {
+        font-size: 10px;
+        line-height: 2em;
+    }
+
+    #info a {
+        font-size: 16px;
+    }
+
+}
