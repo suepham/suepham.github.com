@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #121212;
+    font-family: 'Libre Baskerville', serif;
+    color: white;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 70px;
+}
+
+.newTitle {
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 0;
+    font-size: 20px;
+    text-align: left;
+}
+
+/*********** Startup Page *************/
+
+div {
+    padding: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.divRemove {
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: .5s;
+    display: none;
+}
+
+img {
+    display: inline-block;
+    width: 30%;
+    padding-left: 13%;
+    position: relative;
+    height: 600px;
+}
+
+#player1 {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 19%;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-bottom: solid black 3px;
+    outline: none;
+}
+
+#player2 {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 59.1%;
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-bottom: solid black 3px;
+    outline: none;
+}
+
+#playerone {
+    position: absolute;
+    z-index: 2;
+    top: 34%;
+    left: 18.5%;
+    font-size: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+
+#playertwo {
+    position: absolute;
+    z-index: 2;
+    top: 34%;
+    left: 59.1%;
+    font-size: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 10px;
+    color: black;
+}
+
+#btn1 {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+    top: 70%;
+    left: 24.5%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border: none;
+    background: lightcoral;
+}
+
+#btn1:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#btn2 {
+    font-family: 'Libre Baskerville', serif;
+    position: absolute;
+    z-index: 2;
+    width: 10%;
+    top: 70%;
+    left: 65%;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    color: black;
+    border: none;
+    background: lightblue;
+}
+
+#btn2:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); 
+}
+
+/************* Rules Page **************/
+#main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#maincard { 
+    display: none;
+    margin: 0 auto;
+    padding: 30px;
+    height: 310px;
+    width: 220px;
+}
+
+#btnmain {
+    display: none;
+    text-align: center;
+    justify-content: center;
+    background: #6d6d6d;
+    padding: 10px;
+    top: 50%;
+    position: absolute;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+}
+
+#btnmain:hover {
+    background: rgb(230, 230, 230);
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.rule {
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5em;
+    display: none;
+}
+
+h4 {
+    color: white;
+    position: absolute;
+    padding-top: 45px;
+    padding-left: 17px;
+}
+
+.playercards {
+    width: 82%;
+}
+
+#cardsleft {
+    display: none;
+    width: 10%;
+    float: left;
+    height: 200px;
+    z-index: 1;
+}
+
+#player1card1, #player1card2, #player1card3, #player1card4, #player1card5 {
+    margin: 0;
+    height: auto;
+    left: 0;
+}
+
+#cardsright {
+    display: none;
+    width: 10%;
+    float: right;
+    height: 200px;
+    z-index: 1;
+}
+
+#player2card1, #player2card2, #player2card3, #player2card4, #player2card5 {
+    margin: 0;
+    height: auto;
+    right: 0;
+}
+
+/************* Game Page **************/
+#score1 {
+    display: none;
+    padding-top: 45px;
+    padding-left: 155px;
+    position: sticky;
+}
+
+#score2 {
+    display: none;
+    padding-top: 45px;
+    padding-left: 155px;
+    position: sticky;
+}
+
+h5 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: none;
+}
+
+#cardsleftnew {
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    width: 40%;
+    float: left;
+    height: 150px;
+    z-index: 2;
+}
+
+#cardsrightnew {
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    width: 40%;
+    float: left;
+    height: 150px;
+    z-index: 2;
+}
+
+/*************** Winning Page ***************/
+h6 {
+    transition: .5s;
+    transition-timing-function: ease-in;
+    color: grey;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    display: none;
+    padding: 50px;
+}
+
+h6:hover{
+    transition: .5s;
+    transition-timing-function: ease-out;
+    color: white;
+    font-size: 35px;
+}

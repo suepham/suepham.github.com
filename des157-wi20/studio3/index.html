@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700&display=swap" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Interactive Game</title>
+</head>
+<body>
+    <h1>Code Against Humanity</h1>
+
+    <div>
+        <img src="images/card.svg" id="card1">
+        <h2 id="playerone">Player 1</h2>
+        <input type="text" placeholder="Enter Name" id="player1">
+        <button id="btn1">Join</button>
+
+        <img src="images/card.svg" id="card2">
+        <h2 id="playertwo">Player 2</h2>
+        <input type="text" placeholder="Enter Name" id="player2">
+        <button id="btn2">Join</button>
+    </div>
+
+    <div id="main">
+        <img src="images/card.svg" id="maincard">
+        <btn id="btnmain">Start Playing.</btn>
+    </div>
+    <h5> </h5>
+    <h6> </h6>
+    <h2 class="rule">Rules of the Game:</h2>
+    <h3>There is one main card. Both players will take one turn to select a card in their deck to best match the main card. The computer will select the winning card. The player with the highest score after 2 rounds will win.</h3>
+
+    <div class="playercards">
+        <div id="cardsleft">
+            <h4 id="player1name">Player 1</h4>
+            <h4 id="score1">Score: </h4>
+            <img src="images/card.svg" id="player1card1">
+            <img src="images/card.svg" id="player1card2">
+            <img src="images/card.svg" id="player1card3">
+            <img src="images/card.svg" id="player1card4">
+            <img src="images/card.svg" id="player1card5">
+        </div>
+
+        <div id="cardsright">
+            <h4 id="player2name">Player 2</h4>
+            <h4 id="score2">Score: </h4>
+            <img src="images/card.svg" id="player2card1">
+            <img src="images/card.svg" id="player2card2">
+            <img src="images/card.svg" id="player2card3">
+            <img src="images/card.svg" id="player2card4">
+            <img src="images/card.svg" id="player2card5">
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
