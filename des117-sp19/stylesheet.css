@@ -1,0 +1,116 @@
+* {margin: 0; padding: 0;}
+
+body {
+	background-color: white;
+}
+
+header {
+	background-color: white;
+	text-align: center;
+}
+
+img {
+	width: 100%; 
+	height: 20%;
+    display: block;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+/******** navigation (major projects, exercise, links) *******/
+.container {
+	width: 1000px;
+	padding: 10px;
+	margin: auto;
+	display: block;
+    text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	font-family: 'Nunito', sans-serif;
+}
+
+#project, #exercise, #link {
+	font-weight: 600;
+	padding: 5px;
+	border-bottom: 2px solid rgb(102, 102, 102);
+	text-decoration: none;
+	color: black;
+	font-size: 25px;
+
+	display: inline;
+	position: relative;
+	font-size: 25px;
+	font-family: 'Nunito', sans-serif;
+	color: rgba(27, 188, 228, 0.952); 
+}
+
+#project:after {
+	content: "Major Projects";
+	position: absolute; 
+	left: 9px; 
+	top: 6px;
+	color: rgba(203, 145, 229, 0.4);    
+}
+
+#exercise:after {
+	content: "Exercises";
+	position: absolute; 
+	left: 9px; 
+	top: 6px;
+	color: rgba(203, 145, 229, 0.4);    
+}
+
+#link:after {
+	content: "Links";
+	position: absolute; 
+	left: 9px; 
+	top: 6px;
+	color: rgba(203, 145, 229, 0.4);  
+}
+
+.container div ul li {
+	list-style-type: none;
+}
+
+.container div ul li a {
+	text-decoration: none;
+	color: rgb(75, 75, 75);
+	font-size: 16px;
+	line-height: 2em;
+}
+
+.submenu1, .submenu2, .submenu3 {
+	padding-top: 30px;
+}
+
+.submenu1 li a:hover, .submenu2 li a:hover, .submenu3 li a:hover {
+	font-weight: 900;
+}
+
+/******** footer *******/
+
+footer {
+	width: 100%;  
+	padding-bottom: 10px;
+	background: rgba(108, 210, 236, 0.692); 
+}
+
+footer #name {
+	font-size: 35px;
+	text-align: center;
+	font-weight: 100;
+}
+
+footer p {
+    list-style-type: none;
+	padding-right: 50px;
+	padding-left: 50px;
+	text-align: center;
+	display: block;
+	font-family: 'Gill Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.25em;
+	color: rgb(75, 75, 75);
+}
