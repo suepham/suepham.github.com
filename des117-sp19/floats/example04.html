@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>example 4</title>
+
+<style>
+	
+	/* removes margin and padding put on elements by the browser */
+	* {margin: 0; padding: 0;}
+	
+	/* for the sake of simplicity, I am making the main containers a set width of 1000px */
+	header, section {
+		width: 1000px;
+		margin: auto;
+	}
+	
+	header, h1, section, article, footer {
+		border: 5px solid #5CACEB;
+		padding: 20px;
+	}
+	
+	/* Overflow:hidden not needed if you can clear the float. See footer rule.
+	section {
+		overflow: hidden;
+	}
+	
+	*/
+	
+	/* I added these classes to denote which content is first and which is second */
+	
+	.first {
+		width: 300px;
+		float: right;
+		background: #FBF9A8;
+	}
+	
+	.second {
+		width: 300px;
+		float: left;
+		background:#DFF4AF;
+	}
+	
+	footer {
+		clear: both;
+	}
+	
+	
+</style>
+
+
+</head>
+
+<body>
+
+	<header>
+		
+		<h1>Here is a Main Header</h1>
+		
+	</header>
+	
+	<section>
+		
+		<article class="first">
+			<p><strong>This is the first article</strong> Lie in the sink all day man running from cops stops to pet cats, goes to jail intently stare at the same spot kitty kitty throwup on your pillow, mewl for food at 4am or stare at guinea pigs. Eat the fat cats food head nudges find empty spot in cupboard and sleep all day eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap but hack up furballs and human is washing you why halp oh the horror flee scratch hiss bite.</p>
+		</article>
+		
+		<article class="second">
+			<p><strong>This is the second article</strong> Lie in the sink all day man running from cops stops to pet cats, goes to jail intently stare at the same spot kitty kitty throwup on your pillow, mewl for food at 4am or stare at guinea pigs. Eat the fat cats food head nudges find empty spot in cupboard and sleep all day eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap but hack up furballs and human is washing you why halp oh the horror flee scratch hiss bite.</p>
+			<p><strong>This is the second article</strong> Lie in the sink all day man running from cops stops to pet cats, goes to jail intently stare at the same spot kitty kitty throwup on your pillow, mewl for food at 4am or stare at guinea pigs. Eat the fat cats food head nudges find empty spot in cupboard and sleep all day eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap but hack up furballs and human is washing you why halp oh the horror flee scratch hiss bite.</p>
+		</article>
+		
+		<footer>
+			<p>Here is the footer</p>
+		</footer>
+		
+	</section>
+
+
+</body>
+</html>

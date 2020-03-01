@@ -1,0 +1,104 @@
+article {
+    width: 700px;
+    margin:auto;
+    padding: 100px;
+    background-color: white;
+    padding-top: 10px;
+}
+
+body {
+    background-color: white;
+}
+
+#navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    background-color: rgb(44, 44, 44);
+    text-align: center;
+}
+
+.link {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12pt;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    vertical-align:top;
+}
+
+h1 {
+    font-family: 'Maven Pro', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #ccc;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Quicksand', Arial, sans-serif;
+    color: #303030;
+    font-size: 30px;
+    padding-top: 1.8em
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', Arial, sans-serif;
+    color: gray;
+    text-align: center;
+    line-height: 18pt;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+ul {
+    font-family: 'Quicksand', Arial, sans-serif;
+    color: gray;
+    line-height: 18pt;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+ol {
+    font-family: 'Quicksand', Arial, sans-serif;
+    color: #2b2b2b;
+    line-height: 14pt;
+    font-size: 10pt;
+}
+
+#fas {
+    margin-right: 10px;
+}
+
+footer {
+    background-color: rgb(44, 44, 44);
+    padding: 30px;
+}
+
+#validator {
+    font-size: 20px;
+    color: white;
+}
