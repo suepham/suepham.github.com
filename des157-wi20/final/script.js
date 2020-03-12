@@ -4,8 +4,12 @@ const recycle = document.getElementById("recycle");
 const go = document.getElementById("start");
 const navLinks = document.querySelectorAll("nav ol li a");
 const storyNav = document.getElementById("story");
+const mainLinks = document.querySelectorAll("#main ul li a")
 
 const topPage = document.getElementById("top");
+const topContent = document.getElementById("topContent");
+const aboutSec = document.getElementById("about");
+const missionSec = document.getElementById("mission");
 const experienceSec = document.getElementById("experience");
 const manufacturingSec = document.getElementById("manufacturing");
 const packagingSec = document.getElementById("packaging");
@@ -30,6 +34,35 @@ function smoothScroll(event) {
 
 };
 
+//about section on the nav on top
+mainLinks[1].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "block";
+	missionSec.style.display = "none";
+	topPage.style.paddingBottom = "80px";
+
+	const ab = Math.floor(aboutSec.getBoundingClientRect().top-7);
+	
+	window.scrollBy({top: ab, left: 0, behavior: "smooth"});
+});
+
+//mission section on the nav on top
+mainLinks[2].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const mission = Math.floor(missionSec.getBoundingClientRect().top-59);
+	
+	window.scrollBy({top: mission, left: 0, behavior: "smooth"});
+});
+
+//scroll to experience section when the user clicks on it
 arrow.addEventListener("click", function(){
     const startEx = document.getElementById("experience");
 
@@ -39,8 +72,8 @@ arrow.addEventListener("click", function(){
 
 });
 
+//listen to user clicking on start button
 go.addEventListener("click", function(){
-	const back = document.getElementById("blue");
 	const startMan = document.getElementById("manufacturing");
 	footerSec.setAttribute("class", "hide");
     startMan.style.display = "block";
@@ -51,6 +84,8 @@ go.addEventListener("click", function(){
 	setTimeout(function() {partOne()}, 250);
 });
 
+
+//manufacturing section of the experience
 function partOne() {
 	let changeNum = document.getElementById("changePercentage");
 	let imgOil = document.getElementById("oil");
@@ -62,6 +97,7 @@ function partOne() {
     experienceSec.style.display = "none";
 	let counter = 0;
 	
+	//user presses the space bar to increase the percentage and show amount of oil
 	document.onkeypress = function(e){
 		if (e.keyCode == 32) {
 			counter++;
@@ -79,6 +115,7 @@ function partOne() {
 	}
 }
 
+//packaging section of the experience
 function partTwo() {
 	const itemOne = document.getElementById("mold");
 	const itemTwo = document.getElementById("transfer");
@@ -107,20 +144,25 @@ function partTwo() {
 	});
 }
 
+//transportation section of the experience
 function partThree() {
 	navLinks[1].style.color = "rgb(104, 104, 104)";
 	navLinks[2].style.color = "white";
 	packagingSec.style.display = "none";
 	transportationSec.style.display = "block";
 }	
+
+//drop truck at store
 function allowDrop(ev) {
 	ev.preventDefault();
 }
 
+//drag truck to store
 function drag(ev) {
 	ev.dataTransfer.setData("text", ev.target.id);
 }
 
+//once truck is dropped off at the store
 function drop(ev) {
 	const transport = document.getElementById("transportationFact");
 
@@ -131,6 +173,7 @@ function drop(ev) {
 	setTimeout(function(){partFour()}, 6000);
 }
 
+//purchasing section of the experience
 function partFour() {
 	const buy = document.getElementById("buybtn");
 	const purchase = document.getElementById("purchaseFact");
@@ -149,8 +192,10 @@ function partFour() {
 	});
 }
 
+//disposal section of the experience
 function partFive() {
 	const recycling = document.getElementById("recycleFact");
+	const trashing = document.getElementById("trashMove");
 
 	navLinks[3].style.color = "rgb(104, 104, 104)";
 	navLinks[4].style.color = "white";
@@ -159,17 +204,20 @@ function partFive() {
 
 	trash.addEventListener("click", function(e){
 		e.preventDefault();
+		trashing.style.display = "block";
 		trash.style.background = "#cc0000";
 	});
 	
 	recycle.addEventListener("click", function(e){
 		e.preventDefault();
 		recycle.style.background = "#32CD32";
+		trashing.style.display = "none";
 		recycling.style.display = "block";
 		setTimeout(function(){endStory()}, 5000);
 	});
 }
 
+//show facts page once the user finishes the story
 function endStory() {
 	footerSec.classList.remove("hideFooter");
 	arrow.style.display = "none";
@@ -184,3 +232,4 @@ function endStory() {
 	disposalSec.style.display = "none";
 	topPage.style.paddingBottom = "10px";
 }
+
