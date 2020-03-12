@@ -1,0 +1,653 @@
+/************** body & headings ****************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #21278a;
+}
+
+h1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+h3 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+/************ navs *************/
+
+#main {
+    padding-top: 100px;
+}
+
+#main ul li {
+    display: inline-block;
+    margin: 48px;
+    margin-top: 0px;
+}
+
+#main ul li a:hover {
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a, nav ol li a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#story {
+    top: 25%;
+    margin-left: 50px;
+    position: fixed;
+	display: none;
+}
+
+#story ol li {
+    list-style-type: none;
+}
+
+#story ol li a{
+    margin: 40px;
+    display: block;
+    z-index: 1000;
+    color: rgb(104, 104, 104);
+}
+
+.selected {
+    color: black;
+	transition: all 1s;
+}
+
+/********** top **********/
+#top {
+	padding-bottom: 80px;
+}
+
+#top h2 {
+    text-align: center;
+    padding-left: 40px;
+    color: white;
+    font-size: 60px;
+    margin-top: 80px;
+}
+
+#logo {
+    width: 130px;
+    background: #F2FF00;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 25px;
+}
+
+#logowrap {
+    padding-top: 3%;
+    padding-left: 5%;
+    float: left;
+}
+
+#bottles {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#bottles img {
+    padding: 50px;
+}
+
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 15px;}
+    100% {bottom: 0;}
+}
+
+#down {
+	animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+
+}
+
+#arrow {
+    position: relative;
+		padding-top: 50px;
+}
+
+i {
+    font-size: 50px;
+    color: white;
+}
+
+/*********** experience ***********/
+
+#ex {
+    width: 300px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#experience {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    transition: height 350ms ease-in-out;
+}
+
+#experience h2 {
+    color: #21278a;
+    font-size: 50px;
+    padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#experience h3 {
+    left: 43%;
+}
+
+#experience p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+	padding: 25px;
+	padding-top: 0;
+}
+
+#experience button {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    color: white;
+    background: #5a5a5a;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+    border: none;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+}
+
+#experience button:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#blue {
+    margin: 6%;
+}
+
+/*********** manufacturing ***********/
+
+#man {
+    width: 345px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#manufacturing {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    z-index: 100;
+    display: none;
+	transition: 5s ease-in;
+}
+
+#manufacturing h3 {
+    left: 41%;
+	bottom: -111%;
+    color: white;
+}
+
+#manufacturing p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 30px;
+    color: white;
+}
+
+#mancontent {
+    position: relative;
+}
+
+#manpcontain {
+    width: 30%;
+    text-align: left;
+    margin: 50px;
+     position: absolute;
+    left: 20%;
+}
+
+#percentage {
+    width: 350px;
+    height: 20px;
+    background: rgb(182, 185, 201);
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#percentage2 {
+    width: 0;
+    height: 20px;
+    background: #3f2a14;
+    position: absolute;
+    left: 0;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+#oilFact {
+    padding-top: 50px;
+	display: none;
+}
+
+#manufacturing img {
+    padding-left: 550px;
+    padding-top: 65px;
+}
+/*********** packaging ***********/
+
+#packaging {
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#pack {
+    width: 285px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#packaging h3 {
+    left: 44%;
+    top: 294%;
+    color: white;
+}
+
+#packaging h4 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 40px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#packagingFact {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 15px;
+    color: white;
+    display: none;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+#packaging label {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 50px;
+}
+
+#check {
+    margin-left: 33%;
+    padding-bottom: 20px;
+}
+
+#item1, #item2, #item3 {
+    text-align: left;
+    padding: 30px;
+}
+
+/*********** transportation ***********/
+
+#transportation {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#trans {
+    width: 345px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#transportation h3 {
+    left: 40%;
+    top: 382%;
+    color: white;
+}
+
+#transportation p {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+#trancontent {
+    position: relative;
+    padding-bottom: 120px;
+}
+
+#truck {
+    position: absolute;
+    left: 280px;
+    top: 90px;
+}
+
+#store {
+    position: absolute;
+    left: 900px;
+}
+
+#transportationFact {
+    margin: 10px;
+    display: none;
+    padding-left: 350px;
+    padding-right: 350px;
+}
+
+/*********** purchase ***********/
+
+#purchase {
+    text-align: center;
+    padding-top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#pur {
+    width: 260px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#purchase h3 {
+    left: 44.5%;
+    top: 473%;
+    color: white;
+}
+
+#purchase #price {
+    padding: 20px;
+    padding-top: 0;
+    position: absolute;
+    left: 550px;
+    top: 115px;
+}
+
+#purchase p {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 50px;
+}
+
+#purchase button {
+    background: #4dd2db;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    left: 700px;
+    top: 100px;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+}
+
+#purchase button:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#purcontent img {
+    position: absolute;
+    left: 450px;
+}
+
+#purcontent {
+    position: relative;
+}
+
+#purchaseFact {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 290px;
+    display: none;
+    padding: 0;
+}
+
+/*********** disposal ***********/
+
+#disposal {
+    text-align: center;
+    padding-top: 100px;
+    z-index: 100;
+    display: none;
+}
+
+#dis {
+    width: 255px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#disposal h3 {
+    left: 44.75%;
+    top: 563%;
+    color: white;
+}
+
+#disposal h4 {
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    padding: 50px;
+    color: white;
+}
+
+#disposal button {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 30px;
+    background: #272727;
+    border: none;
+    color: white;
+    padding: 100px;
+    margin: 30px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.15);
+    transition: 0.3s ease-in-out;
+}
+
+#disposal button:hover {
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+#disposal #recycle {
+    padding-left: 84px;
+    padding-right: 84px;
+}
+
+#recycleFact {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    margin: 15px;
+    color: white;
+    display: none;
+}
+
+/*********** facts ***********/
+
+#facts {
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    display: none;
+}
+
+#fact { 
+    width: 207px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+}
+
+#facts h3 {
+    left: 46.5%;
+    top: 670%;
+}
+
+#info {
+    padding-top: 60px;
+}
+
+#facts p {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/*********** footer ***********/
+
+footer {
+    background: #272727;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: white;
+    padding-left: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    display: grid;
+    grid-template-columns: 420px 250px 250px 200px;
+}
+
+.show {
+    display: grid;
+}
+
+.hide {
+    display: none;
+}
+
+footer section {
+    padding-left: 50px;
+}
+
+footer h5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F2FF00;
+}
+
+#newsletter h5 {
+    padding-bottom: 30px;
+}
+
+#newsletter p {
+    font-size: 14px;
+    padding-top: 30px;
+}
+
+#newsletter button {
+    padding: 7px;
+    border: none;
+    background: #21278a;
+    color: white;
+}
+
+#newsletter input {
+    padding: 5px;
+    padding-right: 45px;
+}
+
+#services ul li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+#services ul li a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+#contact h6 {
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+#contact p {
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+#social li {
+    list-style-type: none;
+    padding-top: 5px;
+}
+
+#social li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}

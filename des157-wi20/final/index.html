@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="stylesheet.css" rel="stylesheet">
+    <title>Life After Waste</title>
+</head>
+<body>
+    <section id="top">
+        <div id="logowrap"><div id="logo"><h1>Life After Waste</h1></div></div>
+        
+        <nav id="main">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Mission</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Volunteer</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </nav>
+        <h2>Where does your plastic go?</h2>
+        <div id="bottles">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+            <img src="images/waterbottle.svg" width="50" height="200" alt="plastic water bottle graphic">
+        </div>
+        <div id="arrow">
+            <i id="down" class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h3>EXPERIENCE</h3>
+        <div id="ex"></div>
+        <h2>Life as a Plastic Bottle</h2>
+        <i><p>Go through the lifecycle of a plastic bottle from when it is made to where it ends up.</p></i>
+        <p>Are you ready?</p>
+        <button id="start">Start the Experience</button>
+    </section>
+
+
+        
+    <nav id="story">
+        <ol>
+            <li><a href="#manufacturing">01</a></li>
+            <li><a href="#packaging">02</a></li>
+            <li><a href="#transportation">03</a></li>
+            <li><a href="#purchase">04</a></li>
+            <li><a href="#disposal">05</a></li>
+        </ol>
+    </nav>
+
+    <section id="manufacturing">
+        <h3>MANUFACTURING</h3>
+        <div id="man"></div>
+        <div id="mancontent">
+            <div id="manpcontain">
+                <p>Plastic bottles are made from oil to form polyethylene terphthalate (PET).</p>
+                <p>Hold the space bar to see how much oil is used to make one plastic bottle.</p>
+                <div id="percentage"></div>
+				<div id="percentage2"></div>
+                <p id="changePercentage">0%</p>    
+				<p id="oilFact">The amount of oil it takes to make the plastic is equivalent to filling 1/4 of the bottle with oil.</p>
+            </div>
+            <img id="oil" src="images/waterbottle.svg" width="130" height="350" alt="plastic water bottle graphic">
+        </div>
+    </section>
+
+    <section id="packaging">
+        <h3>PACKAGING</h3>
+        <div id="pack"></div>
+        <h4>Complete the checklist:</h4>
+        <div id="check">
+            <div id="item1">
+                <input type="checkbox" id="mold" name="mold">
+                <label for="mold">Mold plastic into shape</label>
+            </div>
+            <div id="item2">
+                <input type="checkbox" id="transfer" name="transfer">
+                <label for="transfer">Transfer bottle to a bottling plant</label>
+            </div>
+            <div id="item3">
+                <input type="checkbox" id="fill" name="fill">
+                <label for="fill">Fill bottles with water</label>
+            </div>
+        </div>
+        <p id="packagingFact">Bottled water is almost 2,000 times more energy intensive to produce than tap water, and it takes three times the water to make the bottle as it does to fill it.</p>
+    </section>
+
+    <section id="transportation">           
+        <h3>TRANSPORTATION</h3>
+        <div id="trans"></div>
+        <p>Once the bottles are packaged, they are ready to be transported to stores for sale.</p>
+        <p>Drag the truck and drop it near the stores.</p>
+        <div id="trancontent">
+            <img src="images/stores.svg" width="130" height="150" alt="three stores graphic" id="store" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <img src="images/truck.svg" width="190" height="70" alt="semi-truck graphic" id="truck" draggable="true" ondragstart="drag(event)">
+        </div>
+        <p id="transportationFact">Bottling water and shipping transport is the least energy efficient method of water supply in the history of mankind.</p>
+    </section>
+
+    <section id="purchase">
+        <h3>PURCHASE</h3>
+        <div id="pur"></div>
+        <p>Purchase the water bottle!</p>
+        <div id="purcontent"> 
+            <img src="images/waterbottle.svg" width="100" height="250" alt="plastic water bottle graphic">
+            <p id="price">$3</p>
+            <button id="buybtn">BUY</button>
+        </div>
+        <p id="purchaseFact">90% of the cost of a bottled water is the plastic bottle itself.</p>
+    </section>
+
+    <section id="disposal">
+        <h3>DISPOSAL</h3>
+        <div id="dis"></div>
+        <h4>Make your decision</h4>
+        <button id="trash">Trash</button>
+        <button id="recycle">Recycle</button>
+        <p id="recycleFact">You made the right decision! <br>However, only about 23% of plastic bottles are recycled within the U.S.</p>
+    </section>
+
+    <div id="blue"></div>
+    
+    <section id="facts">
+        <h3>FACTS</h3>
+        <div id="fact"></div>
+        <div id="info">
+            <p>Plastic bottles require up to 700 years to completely breakdown in landfill.</p>
+            <p>38 million plastic bottles end up in landfill in the US alone.</p>
+            <p>Do your part to reduce plastic pollution.</p>
+        </div>
+    </section>
+
+    <footer>
+        <section id="newsletter">
+            <h5>SUBSCRIBE TO OUR NEWSLETTER</h5>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+            <p>Join over 200,000 people who receive weekly tips on how to be more sustainable.</p>
+        </section>
+
+        <section id="services">
+            <h5>OUR SERVICES</h5>
+            <nav>
+                <ul>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Volunteer</a></li>
+                    <li><a href="">Refill Stations</a></li>
+                    <li><a href="">Donate</a></li>
+                    <li><a href="">Other resources</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="contact">
+            <h5>CONTACT US</h5>
+            <h6>Call:</h6>
+            <p>+1 (800) 839 7421</p>
+            <h6>General Inquiries:</h6>
+            <p>info@lifeafterwaste.com</p>
+            <h6>Location:</h6>
+            <p>829 Plastic St. E., San Francisco, CA 83720</p>
+        </section>
+
+        <section id="social">
+            <h5>SOCIAL MEDIA</h5>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+            <li><a href="">LinkedIn</a></li>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+	<script src="smoothscroll.js"></script>
+</body>
+</html>
