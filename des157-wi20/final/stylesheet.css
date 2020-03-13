@@ -78,7 +78,7 @@ nav ul li a, nav ol li a {
 
 /********** top **********/
 #top {
-	padding-bottom: 80px;
+	padding-bottom: 100px;
 }
 
 #top h2 {
@@ -172,13 +172,13 @@ i {
     left: 43%;
 }
 
-#experience i {
+#experience p {
     font-family: Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 100;
     color: black;
 	padding: 25px;
-	padding-top: 0;
+    padding-top: 0;
 }
 
 #experience button {

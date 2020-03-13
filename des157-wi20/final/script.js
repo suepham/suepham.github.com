@@ -58,7 +58,7 @@ mainLinks[1].addEventListener("click", function(e){
 	aboutSec.style.display = "block";
 	topPage.style.paddingBottom = "80px";
 
-	const ab = Math.floor(aboutSec.getBoundingClientRect().top-7);
+	const ab = Math.floor(aboutSec.getBoundingClientRect().top-20);
 	
 	window.scrollBy({top: ab, left: 0, behavior: "smooth"});
 });
@@ -118,7 +118,7 @@ mainLinks[4].addEventListener("click", function(e){
 	tipsSec.style.display = "block";
 	topPage.style.paddingBottom = "80px";
 
-	const tip = Math.floor(tipsSec.getBoundingClientRect().top-7);
+	const tip = Math.floor(tipsSec.getBoundingClientRect().top-20);
 	
 	window.scrollBy({top: tip, left: 0, behavior: "smooth"});
 });
