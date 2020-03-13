@@ -418,7 +418,7 @@ i {
 #manufacturing {
     text-align: center;
     padding-bottom: 50px;
-    padding-top: 100px;
+    padding-top: 10%;
     z-index: 100;
     display: none;
 	transition: 5s ease-in;
@@ -484,7 +484,7 @@ i {
 #packaging {
     text-align: center;
     padding-bottom: 70px;
-    padding-top: 100px;
+    padding-top: 10%;
     z-index: 100;
     display: none;
 }
@@ -551,7 +551,7 @@ i {
 #transportation {
     text-align: center;
     padding-bottom: 60px;
-    padding-top: 100px;
+    padding-top: 10%;
     z-index: 100;
     display: none;
 }
@@ -586,14 +586,14 @@ i {
 
 #truck {
     position: absolute;
-    left: 280px;
+    left: 30%;
     top: 90px;
     cursor: pointer;
 }
 
 #store {
     position: absolute;
-    left: 900px;
+    left: 60%;
 }
 
 #transportationFact {
@@ -607,7 +607,7 @@ i {
 
 #purchase {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10%;
     z-index: 100;
     display: none;
 }
@@ -630,7 +630,7 @@ i {
     padding: 20px;
     padding-top: 0;
     position: absolute;
-    left: 550px;
+    left: 43%;
     top: 115px;
 }
 
@@ -651,7 +651,7 @@ i {
     font-weight: 300;
     font-size: 20px;
     position: absolute;
-    left: 700px;
+    left: 55%;
     top: 100px;
     cursor: pointer;
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
@@ -663,7 +663,7 @@ i {
 
 #purcontent img {
     position: absolute;
-    left: 450px;
+    left: 35%;
 }
 
 #purcontent {
@@ -683,7 +683,7 @@ i {
 
 #disposal {
     text-align: center;
-    padding-top: 100px;
+    padding-top: 10%;
     z-index: 100;
     display: none;
 }
