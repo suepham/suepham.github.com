@@ -1002,14 +1002,7 @@ footer h5 {
 .cube {
     width: 250px;
     height: 100px;
-    -webkit-transition: all 250ms ease;
-    -moz-transition: all 250ms ease;
-    -o-transition: all 250ms ease;
     transition: all 250ms ease;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 /* The two faces of the cube */
@@ -1019,25 +1012,13 @@ footer h5 {
 }
 /* Position the faces */
 .default-state {
-    -webkit-transform: translateZ(50px);
-    -moz-transform: translateZ(50px);
-    -o-transform: translateZ(50px);
-    -ms-transform: translateZ(50px);
     transform: translateZ(50px);
 }
 .cube .active-state {
-    -webkit-transform: rotateX(90deg) translateZ(150px);
-    -moz-transform: rotateX(90deg) translateZ(150px);
-    -o-transform: rotateX(90deg) translateZ(150px);
-    -ms-transform: rotateX(90deg) translateZ(150px);
     transform: rotateX(90deg) translateZ(150px);
 }
 /* Rotate the cube */
 .cube.flip {
-    -webkit-transform: rotateX(-89deg);
-    -moz-transform: rotateX(-89deg);
-    -o-transform: rotateX(-89deg);
-    -ms-transform: rotateX(-89deg);
     transform: rotateX(-89deg);
 }
 
@@ -1052,9 +1033,7 @@ footer h5 {
     font-size: 16px;
     color: white;
     line-height: 100px;
-    -webkit-transition: background 250ms ease;
-    -moz-transition: background 250ms ease;
-    -o-transition: background 250ms ease;
+    cursor: pointer;
     transition: background 250ms ease;
 }
 
@@ -1080,8 +1059,6 @@ input:focus {
 }
 
 #button-container {
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
     perspective: 1000px;
 }
 
