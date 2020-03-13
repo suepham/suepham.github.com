@@ -5,11 +5,16 @@ const go = document.getElementById("start");
 const navLinks = document.querySelectorAll("nav ol li a");
 const storyNav = document.getElementById("story");
 const mainLinks = document.querySelectorAll("#main ul li a")
+const serviceLinks = document.querySelectorAll("#services ul li a");
 
+//get all sections on the website
 const topPage = document.getElementById("top");
 const topContent = document.getElementById("topContent");
 const aboutSec = document.getElementById("about");
 const missionSec = document.getElementById("mission");
+const contactSec = document.getElementById("contactus");
+const tipsSec = document.getElementById("tips");
+const resourcesSec = document.getElementById("resources");
 const experienceSec = document.getElementById("experience");
 const manufacturingSec = document.getElementById("manufacturing");
 const packagingSec = document.getElementById("packaging");
@@ -18,10 +23,14 @@ const purchaseSec = document.getElementById("purchase");
 const disposalSec = document.getElementById("disposal");
 const factsSec = document.getElementById("facts");
 const footerSec = document.querySelector("footer");
+const soonSec = document.getElementById("soon");
+const faqSec = document.getElementById("faq");
+const donateSec = document.getElementById("donate");
 
-navLinks.forEach(function(eachLink){
-    eachLink.addEventListener("click", smoothScroll);
-});
+const thisButton = document.querySelector('.cube');
+const textField = document.getElementById('amount');
+const defaultButtonText = document.querySelector('.default-state span');
+const defaultButton = document.querySelector('.default-state');
 
 function smoothScroll(event) {
     event.preventDefault();
@@ -34,13 +43,19 @@ function smoothScroll(event) {
 
 };
 
-//about section on the nav on top
+//about section on the top nav
 mainLinks[1].addEventListener("click", function(e){
 	topContent.style.display = "none";
 	factsSec.style.display = "none";
 	experienceSec.style.display = "none";
+	contactSec.style.display = "none";
+	missionSec.style.display = "none";	
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
 	aboutSec.style.display = "block";
-	missionSec.style.display = "none";
 	topPage.style.paddingBottom = "80px";
 
 	const ab = Math.floor(aboutSec.getBoundingClientRect().top-7);
@@ -48,18 +63,84 @@ mainLinks[1].addEventListener("click", function(e){
 	window.scrollBy({top: ab, left: 0, behavior: "smooth"});
 });
 
-//mission section on the nav on top
+//mission section on the top nav
 mainLinks[2].addEventListener("click", function(e){
 	topContent.style.display = "none";
 	factsSec.style.display = "none";
 	experienceSec.style.display = "none";
 	aboutSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
 	missionSec.style.display = "block";
 	topPage.style.paddingBottom = "80px";
 
 	const mission = Math.floor(missionSec.getBoundingClientRect().top-59);
 	
 	window.scrollBy({top: mission, left: 0, behavior: "smooth"});
+});
+
+//contact section on the top nav
+mainLinks[3].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
+	contactSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const con = Math.floor(contactSec.getBoundingClientRect().top-59);
+	
+	window.scrollBy({top: con, left: 0, behavior: "smooth"});
+});
+
+//tips section on the top nav
+mainLinks[4].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
+	tipsSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const tip = Math.floor(tipsSec.getBoundingClientRect().top-7);
+	
+	window.scrollBy({top: tip, left: 0, behavior: "smooth"});
+});
+
+//resources section on the top nav
+mainLinks[5].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
+	resourcesSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const resource = Math.floor(resourcesSec.getBoundingClientRect().top-59);
+	
+	window.scrollBy({top: resource, left: 0, behavior: "smooth"});
 });
 
 //scroll to experience section when the user clicks on it
@@ -83,7 +164,6 @@ go.addEventListener("click", function(){
 	window.scrollBy({top: manufacture, left: 0, behavior: "smooth"});
 	setTimeout(function() {partOne()}, 250);
 });
-
 
 //manufacturing section of the experience
 function partOne() {
@@ -138,7 +218,7 @@ function partTwo() {
 			itemThree.addEventListener("click", function(e){
 				labels[2].style.setProperty("text-decoration", "line-through");
 				pack.style.display = "block";
-				setTimeout(function(){partThree()}, 7000);
+				setTimeout(function(){partThree()}, 5000);
 			});
 		});
 	});
@@ -170,7 +250,7 @@ function drop(ev) {
 	var data = ev.dataTransfer.getData("text");
 	ev.target.appendChild(document.getElementById(data));
 	transport.style.display = "block";
-	setTimeout(function(){partFour()}, 6000);
+	setTimeout(function(){partFour()}, 5000);
 }
 
 //purchasing section of the experience
@@ -233,3 +313,112 @@ function endStory() {
 	topPage.style.paddingBottom = "10px";
 }
 
+//FAQ link in footer
+serviceLinks[0].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	soonSec.style.display = "none";
+	donateSec.style.display = "none";
+	faqSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const fre = Math.floor(faqSec.getBoundingClientRect().top-50);
+
+	window.scrollBy({top: fre, left: 0, behavior: "smooth"});
+});
+
+//collapse FAQ 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+
+//volunteer link in footer
+serviceLinks[1].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
+	soonSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const con = Math.floor(soonSec.getBoundingClientRect().top-59);
+
+	window.scrollBy({top: con, left: 0, behavior: "smooth"});
+});
+
+//donate link in footer
+serviceLinks[3].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	resourcesSec.style.display = "none";
+	faqSec.style.display = "none";
+	soonSec.style.display = "none";
+	donateSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const don = Math.floor(donateSec.getBoundingClientRect().top-59);
+
+	window.scrollBy({top: don, left: 0, behavior: "smooth"});
+});
+
+//donate button
+thisButton.addEventListener("click", function(event){
+  if(textField.value != ''){
+    this.className = "cube flip";
+  } else {
+    defaultButtonText.innerHTML = "Please enter an amount";
+    defaultButton.setAttribute("style", "background-color: rgba(205,0,4,1.00)");
+    setTimeout(function() {
+      defaultButtonText.innerHTML = "Donate";
+      defaultButton.removeAttribute("style");
+    }, 2000);
+  }
+});
+
+//other resources links in footer
+serviceLinks[4].addEventListener("click", function(e){
+	topContent.style.display = "none";
+	factsSec.style.display = "none";
+	experienceSec.style.display = "none";
+	aboutSec.style.display = "none";
+	missionSec.style.display = "none";
+	contactSec.style.display = "none";
+	tipsSec.style.display = "none";
+	soonSec.style.display = "none";
+	faqSec.style.display = "none";
+	donateSec.style.display = "none";
+	resourcesSec.style.display = "block";
+	topPage.style.paddingBottom = "80px";
+
+	const resource = Math.floor(resourcesSec.getBoundingClientRect().top-59);
+	
+	window.scrollBy({top: resource, left: 0, behavior: "smooth"});
+});

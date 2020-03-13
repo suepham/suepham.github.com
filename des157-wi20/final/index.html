@@ -6,6 +6,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
     <link href="stylesheet.css" rel="stylesheet">
     <title>Life After Waste</title>
 </head>
@@ -18,9 +20,9 @@
                 <li><a href="">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#mission">Mission</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#volunteer">Volunteer</a></li>
-                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contactus">Contact</a></li>
+                <li><a href="#tips">Tips</a></li>
+                <li><a href="#resources">Resources</a></li>
             </ul>
         </nav>
 
@@ -61,6 +63,89 @@
         <h3>OUR MISSION</h3>
         <div id="mi"></div>
         <p>We strive to educate the population on the production of plastic bottles. Our experience places the user into the entire lifecycle of plastic bottles from when they are pulled from oil in the Earth to their disposal process. We hope to reduce the amount of plastic in the world and encourage recycling. Plastic is harmful to both the natural world and species that live on it. It is an issue that needs better resources and solutions.</p>
+    </section>
+
+    <section id="contactus">
+        <h3>CONTACT US</h3>
+        <div id="cu"></div>
+        <h4>Call our office:</h4>
+        <p>+1 (800) 839 7421</p>
+        <h4>For general inquiries:</h4>
+        <p>info@lifeafterwaste.com</p>
+        <h4>Office location:</h4>
+        <p>829 Plastic St. E., San Francisco, CA 83720</p>
+        <div id='map' class='map'></div>
+    </section>
+
+    <section id="tips">
+        <h3>TIPS</h3>
+        <div id="ti"></div>
+        <ol>
+            <li>Use a reuseable water bottle</li>
+            <li>Filter your own water supply at home</li>
+            <li>Recycle used water bottles</li>
+            <li>Choose glass bottles over plastic</li>
+            <li>Turn the plastic into clothing or jewelry</li>
+            <li>Choose BPA-free plastic bottles</li>
+            <li>Volunteer at events to remove plastic and trash</li>
+            <li>Find refillable water stations or water fountains</li>
+            <li>Bring your own bottle/mug to coffee stores</li>
+            <li>Consider the consequences</li>
+        </ol>
+    </section>
+
+    <section id="resources">
+        <h3>LEARN MORE</h3>
+        <div id="lm"></div>
+        <ul>
+            <li><a href="https://www.plasticpollutioncoalition.org">Plastic Pollution Coalition</a></li>
+            <li><a href="https://sloactive.com/plastic-pollution/">Slow Active: Plastic Pollution Causes, Facts & Figures</a></li>
+            <li><a href="https://ourworldindata.org/plastic-pollution">Our World in Data: Plastic Pollution</a></li>
+            <li><a href="https://www.unenvironment.org/news-and-stories/story/plastic-planet-how-tiny-plastic-particles-are-polluting-our-soil">United Nations: Plastic planet - How tiny plastic particles are polluting our soil</a></li>
+            <li><a href="https://www.biologicaldiversity.org/campaigns/ocean_plastics/">Center for Biological Diversity: OCEAN PLASTICS POLLUTION</a></li>
+            <li><a href="https://time.com/5581326/plastic-particles-in-bottled-water/">TIME Magazine: Your Bottled Water Probably Has Plastic In It. Should You Worry?</a></li>
+        </ul>
+    </section>
+
+    <section id="soon">
+        <h3>COMING SOON</h3>
+        <div id="cs"></div>
+        <p>This page is currently under construction. Check back again soon!</p>
+    </section>
+
+    <section id="faq">
+        <h3>FREQUENTLY ASKED QUESTIONS</h3>
+        <div id="fa"></div>    
+        <button type="button" class="collapsible">What is Life After Waste?</button>
+        <div class="content">
+            <p>Life After Waste brings awareness to the process of making plastic bottles.</p>
+        </div>
+        <button type="button" class="collapsible">How long does the experience take?</button>
+        <div class="content">
+            <p>It is a quick process that lasts about 5 minutes or less.</p>
+        </div>
+        <button type="button" class="collapsible">Where did this idea come from?</button>
+        <div class="content">
+            <p>We believe that learning about the process of water bottles will help limit the amount of plastic pollution.</p>
+        </div>
+    </section>
+
+    <section id="donate">
+        <h3>DONATE</h3>
+        <div id="do"></div>
+        <form method="post" action="index.html">
+            <span class="currency">$<input type="number" name="amount" id="amount" placeholder="20"></span>
+            <div id="button-container">
+              <div class="cube">
+                <div class="default-state">
+                  <span>Donate</span>
+                </div>
+                <div class="active-state">
+                  <span>Thank you!</span>
+                </div>
+              </div>
+            </div>
+          </form>
     </section>
         
     <nav id="story">
@@ -168,11 +253,11 @@
             <h5>OUR SERVICES</h5>
             <nav>
                 <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Volunteer</a></li>
-                    <li><a href="">Refill Stations</a></li>
-                    <li><a href="">Donate</a></li>
-                    <li><a href="">Other resources</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#soon">Volunteer</a></li>
+                    <li><a href="https://suepham.github.io/des157-wi20/studio4/index.html">Refill Stations</a></li>
+                    <li><a href="#donate">Donate</a></li>
+                    <li><a href="#resources">Other resources</a></li>
                 </ul>
             </nav>
         </section>
@@ -189,11 +274,11 @@
 
         <section id="social">
             <h5>SOCIAL MEDIA</h5>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">YouTube</a></li>
-            <li><a href="">LinkedIn</a></li>
+            <li><a href="#soon">Facebook</a></li>
+            <li><a href="#soon">Twitter</a></li>
+            <li><a href="#soon">Instagram</a></li>
+            <li><a href="https://validator.w3.org/check?uri=referer">Valid HTML</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a></li>
         </section>
     </footer>
 

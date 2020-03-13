@@ -132,7 +132,9 @@ nav ul li a, nav ol li a {
 
 #arrow {
     position: relative;
-		padding-top: 50px;
+    padding-top: 50px;
+    cursor: pointer;
+
 }
 
 i {
@@ -189,6 +191,7 @@ i {
     padding-right: 30px;
     margin-top: 50px;
     border: none;
+    cursor: pointer;
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
 }
 
@@ -272,6 +275,134 @@ i {
     padding-right: 100px;
     line-height: 2em;
     text-align: left;
+}
+
+/*********** contact us ************/
+#cu {
+    width: 250px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#contactus {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+    
+}
+
+#contactus h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+#contactus h4 {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 2em;
+    text-align: center;
+}
+
+#contactus p {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 2em;
+    text-align: center;
+}
+
+/*********** tips ************/
+#ti {
+    width: 150px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#tips {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+    
+}
+
+#tips h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+#tips ol {
+    text-align: left;
+    margin-left: 38%;
+}
+
+#tips ol li {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    line-height: 2em;
+}
+
+/*********** resources ************/
+#lm {
+    width: 250px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#resources {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+    
+}
+
+#resources h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+#resources ul {
+    text-align: left;
+    list-style-type: none;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#resources ul li a {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    line-height: 2em;
 }
 
 /*********** manufacturing ***********/
@@ -398,6 +529,11 @@ i {
     font-weight: 500;
     font-size: 25px;
     margin: 50px;
+    cursor: pointer;
+}
+
+#packaging input {
+    cursor: pointer;
 }
 
 #check {
@@ -452,6 +588,7 @@ i {
     position: absolute;
     left: 280px;
     top: 90px;
+    cursor: pointer;
 }
 
 #store {
@@ -516,6 +653,7 @@ i {
     position: absolute;
     left: 700px;
     top: 100px;
+    cursor: pointer;
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
 }
 
@@ -581,6 +719,7 @@ i {
     color: white;
     padding: 100px;
     margin: 30px;
+    cursor: pointer;
     box-shadow: 0 6px 6px rgba(0,0,0,0.15);
     transition: 0.3s ease-in-out;
 }
@@ -733,4 +872,230 @@ footer h5 {
     text-decoration: none;
     color: white;
     font-size: 14px;
+}
+
+/*********** coming soon ************/
+#cs {
+    width: 250px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#soon {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+}
+
+#soon h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+#soon p {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    line-height: 2em;
+    text-align: center;
+}
+
+/************* FAQ ***********/
+#fa {
+    width: 550px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#faq {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+}
+
+#faq h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+.collapsible {
+    font-family: Helvetica, sans-serif;
+    background-color: #e7e7e7;
+    color: #21278a;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+  }
+
+.content {
+    font-family: Helvetica, sans-serif;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+    content: '\02795';
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}   
+
+/*********** donate ************/
+#do {
+    width: 200px;
+    height: 5px;
+    background: #F2FF00;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#donate {
+    display: none;
+    background: white;
+    text-align: center;
+    padding: 30px;
+    padding-bottom: 120px;
+    padding-top: 100px;
+    transition: height 350ms ease-in-out;
+}
+
+#donate h3 {
+    left: 43%;
+    padding-bottom: 10px;
+}
+
+/* Container box to set the sides relative to */
+.cube {
+    width: 250px;
+    height: 100px;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+/* The two faces of the cube */
+.default-state,
+.active-state {
+    height: 100px;
+}
+/* Position the faces */
+.default-state {
+    -webkit-transform: translateZ(50px);
+    -moz-transform: translateZ(50px);
+    -o-transform: translateZ(50px);
+    -ms-transform: translateZ(50px);
+    transform: translateZ(50px);
+}
+.cube .active-state {
+    -webkit-transform: rotateX(90deg) translateZ(150px);
+    -moz-transform: rotateX(90deg) translateZ(150px);
+    -o-transform: rotateX(90deg) translateZ(150px);
+    -ms-transform: rotateX(90deg) translateZ(150px);
+    transform: rotateX(90deg) translateZ(150px);
+}
+/* Rotate the cube */
+.cube.flip {
+    -webkit-transform: rotateX(-89deg);
+    -moz-transform: rotateX(-89deg);
+    -o-transform: rotateX(-89deg);
+    -ms-transform: rotateX(-89deg);
+    transform: rotateX(-89deg);
+}
+
+.cube {
+    text-align: center;
+    margin: 0 auto;
+}
+.default-state,
+.active-state {
+    font-family: Helvetica, sans-serif;
+    background: #21278a;
+    font-size: 16px;
+    color: white;
+    line-height: 100px;
+    -webkit-transition: background 250ms ease;
+    -moz-transition: background 250ms ease;
+    -o-transition: background 250ms ease;
+    transition: background 250ms ease;
+}
+
+/****** form styles ******/
+
+input {
+    padding: 5px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+.currency {
+    font-family: Helvetica, sans-serif;
+    padding: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    display: block;
+    width: 250px;
+    margin: auto;
+}
+
+#button-container {
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+
+/********* Animation Styles ***********/
+
+.moveImg {
+    animation: moveUp 1s ease-out forwards;
+}
+
+@keyframes moveUp {
+    from {
+        bottom: -140px;
+    }
+    to {
+        bottom: 0;
+    }
 }
