@@ -1,0 +1,261 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 40px;
+	color: #1C3C64;
+	margin: 80px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+/************ navigation ************/
+
+nav {
+	margin-top: 53px;
+	margin-right: 80px;
+	display: inline-block;
+	float: right;
+}
+
+nav ul li {
+	list-style-type: none;
+	font-family: 'Inter', sans-serif;
+	display: inline-block;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #1C3C64;
+	font-weight: 400;	
+	margin-left: 40px;
+}
+
+nav ul li a:hover {
+	color: #6283AF;
+	font-weight: 600;
+}
+
+/*********** welcome ************/
+
+#welcome {
+	margin: 150px auto;
+	width: 80%;
+	height: 55vh;
+}
+
+#welcome h2 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 70px;
+	padding-top: 50px;
+	color: #EDA933;
+}
+
+#welcome h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 25px;
+	color: #1C3C64;
+}
+
+#welcome p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2em;
+	color: #6283AF;
+}
+
+#welcome img {
+	float: left;
+	margin-right: 100px;
+	width: 30%;
+}
+
+#arrow {
+    cursor: pointer;
+}
+
+#welcome i {
+	font-size: 30px;
+    color: #1C3C64;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 10px;}
+    100% {bottom: 0;}
+}
+
+#down {
+	animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    left: 50%;
+    margin-left: -25px;
+	position: absolute;
+    width: 50px;
+}
+
+/************** featured **************/
+
+.feature {
+	width: 1100px;
+	background: #F1F1F1;
+	border-radius: 15px 50px 30px;
+	margin: 80px auto;
+	transition:all 0.3s ease-out;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.feature:hover {
+	transition:all 0.3s ease-in;
+	border-radius: 30px;
+}
+
+.feature #bar1, .feature #bar2, .feature #bar3, .feature #bar4 {
+	width: 35%;
+	height: 10px;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+#bar1 {
+	background: #21278a;
+}
+
+#bar2 {
+	background: black;
+}
+
+#bar3 {
+	background: #2e3192;
+}
+
+#bar4 {
+	background: #C5181B;
+}
+
+#featureOne, #featureTwo, #featureThree, #featureFour {
+	display: inline-block;
+	padding: 24.5px;
+	padding-left: 0;
+	margin: 20px 0 0 0;
+	width: 30%;
+}
+
+.feature h2 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	color: #333333;
+	padding-left: 30px;
+}
+
+.feature h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	padding: 10px 0px;
+	color: lightslategray;
+	padding-left: 30px;
+}
+
+.feature p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2em;
+	color: #2e2e38;
+	padding-left: 30px;
+}
+
+.feature button {
+	padding: 10px 10px;
+	border-radius: 5px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 13px;
+	margin: 25px 0 0 30px;
+	cursor: pointer;
+  	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	background-color: transparent;
+}
+
+.feature button:hover {
+	font-weight: 700;
+}
+
+#featureOne button {
+	border: #21278a solid 2px;
+	color: #21278a;
+}
+
+#featureTwo button {
+	border: black solid 2px;
+	color: black;
+}
+
+#featureThree button {
+	border: #2e3192 solid 2px;
+	color: #2e3192;
+}
+
+#featureFour button {
+	border: #C5181B solid 2px;
+	color: #C5181B;
+}
+
+.feature #featureImg1, .feature #featureImg2, .feature #featureImg3, .feature #featureImg4 {
+	width: 65%;
+	text-align: center;
+	float: right;
+	border-radius: 0 30px 30px 0;
+	margin: 0 auto;
+}
+
+.feature #featureImg1 {
+	padding: 78px 0;
+	background: #21278a;
+}
+
+.feature #featureImg2 {
+	padding: 49px 0;
+	background: black;
+}
+
+.feature #featureImg3 {
+	padding: 52.5px 0;
+	background: #2e3192;
+}
+
+.feature #featureImg4 {
+	padding: 78px 0;
+	background: #C5181B;
+}
+
+/************ footer *************/
+
+footer { 
+	text-align: center;
+	padding: 20px 0 20px 0;
+}
+
+footer p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 2em;
+	color: #6283AF;
+}
+
+footer .icons a i {
+	color: #6283AF;
+	padding: 5px 2px 5px 2px;
+	font-size: 20px;
+}
