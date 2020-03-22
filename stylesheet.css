@@ -19,7 +19,6 @@ h1 {
 nav {
 	margin-top: 53px;
 	margin-right: 80px;
-	display: inline-block;
 	float: right;
 }
 
@@ -52,8 +51,8 @@ nav ul li a:hover {
 #welcome h2 {
 	font-family: 'Inter', sans-serif;
 	font-weight: 500;
-	font-size: 70px;
-	padding-top: 50px;
+	font-size: 300%;
+	padding-top: 20px;
 	color: #EDA933;
 }
 
@@ -74,12 +73,16 @@ nav ul li a:hover {
 
 #welcome img {
 	float: left;
-	margin-right: 100px;
 	width: 30%;
 }
 
+#welcome #topInfo {
+	float: right;
+	width: 60%;
+}
+
 #arrow {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 #welcome i {
@@ -99,7 +102,8 @@ nav ul li a:hover {
     left: 50%;
     margin-left: -25px;
 	position: absolute;
-    width: 50px;
+	width: 50px;
+	padding-bottom: 30px;
 }
 
 /************** featured **************/
@@ -122,7 +126,7 @@ nav ul li a:hover {
 	width: 35%;
 	height: 10px;
 	position: relative;
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 #bar1 {
@@ -155,6 +159,8 @@ nav ul li a:hover {
 	font-size: 30px;
 	color: #333333;
 	padding-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .feature h3 {
@@ -244,6 +250,7 @@ nav ul li a:hover {
 footer { 
 	text-align: center;
 	padding: 20px 0 20px 0;
+	position: relative;
 }
 
 footer p {
@@ -254,7 +261,37 @@ footer p {
 	color: #6283AF;
 }
 
-footer .icons a i {
+/************* contact page **************/
+
+#about {
+	margin: 50px auto 150px auto;
+	width: 80%;
+}
+
+#about img {
+	float: left;
+	clear: right;
+	margin-right: 40px;
+}
+
+#about h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	padding-bottom: 10px;
+	color: #1C3C64;
+}
+
+#about p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	color: #2e2e38;
+	line-height: 1.5em;
+	padding-bottom: 20px;
+}
+
+#about i {
 	color: #6283AF;
 	padding: 5px 2px 5px 2px;
 	font-size: 20px;
