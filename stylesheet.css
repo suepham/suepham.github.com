@@ -298,6 +298,7 @@ footer p {
 #about {
 	margin: 50px auto 50px auto;
 	width: 80%;
+	display: none;
 }
 
 #about img {
@@ -328,4 +329,64 @@ footer p {
 	padding: 5px 2px 5px 2px;
 	font-size: 25px;
 	margin-right: 10px;
+}
+
+#about i:hover {
+	color: #21278a
+}
+
+/************ all work ************/
+
+#work {
+	text-align: center;
+	margin: 50px auto;
+	display: none;
+}
+
+#work p {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2em;
+	color: #2e2e38;
+}
+
+.accordion {
+	background-color: #eee;
+	font-family: 'Inter', sans-serif;
+	font-weight: 800;
+	font-size: 18px;
+	color: #2e2e38;
+	cursor: pointer;
+	padding: 18px;
+	width: 85%;
+	text-align: center;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #21278a;
+	color: white;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+	content: '\02795'; /* Unicode character for "plus" sign (+) */
+	font-size: 13px;
+	color: white;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
