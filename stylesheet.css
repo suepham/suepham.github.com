@@ -402,21 +402,85 @@ footer p {
 	background: rgb(32, 32, 32);
 }
 
-.projectInfo {
+.projectBasics {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	margin: 0 80px;
 	border-top: solid black 1px;
 }
 
-.projectInfo h3 {
+.projectBasics h3 {
 	font-weight: 500;
 	color: #333333;
 	margin: 20px 0;
 }
 
-.projectInfo p {
+.projectBasics p {
 	color: grey;
 	font-size: 14px;
+	margin-right: 50px;
+}
+
+.projectInfo {
+	margin-left: 80px;
+}
+
+.projectInfo h3 {
+	font-size: 30px;
+	font-weight: 500;
+	color: black;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+
+.projectInfo h4 {
+	padding: 10px 0;
+	font-weight: 500;
+	font-size: 18px;
+	position: absolute;
+}
+
+.projectInfo h5 {
+	color: rgb(88, 88, 88);
+	font-size: 17px;
 	margin-right: 100px;
+	padding: 5px 0 20px 0;
+	padding-left: 350px;
+	text-decoration: underline;
+	position: relative;
+}
+
+.projectInfo h6 {
+	color: rgb(88, 88, 88);
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 100px;
+	padding: 5px 0;
+	padding-left: 350px;
+	position: relative;
+}
+
+.projectInfo p, .projectInfo ul {
+	color: rgb(88, 88, 88);
+	font-size: 16px;
+	margin-right: 100px;
+	padding: 5px 0 10px 0;
+	line-height: 1.75em;
+	padding-left: 350px;
+	position: relative;
+}
+
+.projectInfo ul {
+	padding-left: 365px;
+}
+
+.projectInfo p a, .projectInfo h6 a {
+	color: rgb(51, 51, 51);
+	font-size: 16px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.projectInfo img {
+	padding: 20px 20px 20px 0;
 }
