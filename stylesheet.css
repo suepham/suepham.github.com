@@ -484,3 +484,8 @@ footer p {
 .projectInfo img {
 	padding: 20px 20px 20px 0;
 }
+
+video {
+	height: 100%;
+	width: 100%;
+}
