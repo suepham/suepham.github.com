@@ -369,7 +369,7 @@ footer p {
 
 /********** Project: Life After Waste *********/
 
-#law, #cah {
+#law, #cah, #hsl, #yac {
 	margin: 30px auto;
 }
 
@@ -379,12 +379,12 @@ footer p {
 	background: #21278a;
 }
 
-#law h1, #cah h1 {
+#law h1, #cah h1, #hsl h1, #yac h1 {
 	color: black;
 	font-weight: 600;
 }
 
-#law button, #cah button {
+#law button, #cah button, #hsl button {
 	float: right;
 	padding: 10px;
 	border: none;
@@ -406,6 +406,26 @@ footer p {
 
 #cah button {
 	background: black;
+}
+
+/************* Project: Hydration Station Locator ************/
+
+#hsl .imgDiv {
+	text-align: center;
+	padding: 60px 0;
+	background: #2e3192;
+}
+
+#hsl button {
+	background: #2e3192;
+}
+
+/************* Project: Young Adults with Cancer **************/
+
+#yac .imgDiv {
+	text-align: center;
+	padding: 60px 0;
+	background: #C5181B;
 }
 
 /************** All Projects ************/
@@ -488,7 +508,7 @@ footer p {
 	padding-left: 365px;
 }
 
-.projectInfo p a, .projectInfo h6 a {
+.projectInfo p a, .projectInfo h6 a, .projectInfo ul li a  {
 	color: rgb(51, 51, 51);
 	font-size: 16px;
 	font-weight: 700;

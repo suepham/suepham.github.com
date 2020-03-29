@@ -19,17 +19,17 @@
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="work.html">All Work</a></li>
+				<!-- <li><a href="work.html">All Work</a></li> -->
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</main>
 
-	<section id="cah">
-		<div class="imgDiv"><img src="images/CAH/CodeAgainstHumanity.png" width="450" alt="Code Against Humanity webpage"></div>
+	<section id="hsl">
+		<div class="imgDiv"><img src="images/HSL/HydrationStationLocator.png" width="450" alt="Hydration Station Locator webpage"></div>
 		<div class="bar"></div>
-		<h1>Code Against Humanity</h1>
-		<a href="https://suepham.github.io/des157-wi20/studio3/index.html" target="_blank"><button>Live View</button></a>
+		<h1>UC Davis Hydration Station Locator</h1>
+		<a href="https://suepham.github.io/des157-wi20/studio4/index.html" target="_blank"><button>Live View</button></a>
 		<article class="projectBasics">
 			<div class="itemone">
 				<h3>Project Type</h3>
@@ -41,105 +41,90 @@
 			</div>
 			<div class="item4">
 				<h3>Skills</h3>
-				<p>Visual Design, Interaction Design, Coding, Game Design</p>
+				<p>Visual Design, Interaction Design, Coding, JavaScript Libraries</p>
 			</div>
 			<div class="item3">
 				<h3>Tools</h3>
-				<p>Visual Studio Code, Adobe Illustrator, HTML, CSS, JavaScript</p>
+				<p>Visual Studio Code, Mapbox, HTML, CSS, JavaScript</p>
 			</div>
 			<div class="itemfour">
 				<h3>Timeline</h3>
-				<p>Feb. 18 - Feb. 25 (1 week)</p>
+				<p>Feb. 27 - Mar. 5, 2020 <br>(1 week)</p>
 			</div>
 		</article>
 
 		<article class="projectInfo">
 			<h3>Overview</h3>
 			<h4>Background</h4>
-			<p>This assignment was for my JavaScript course at UC Davis. The assignment was to practice the techniques and skills we learned in the class so far by using DOM manipulation, timers, and JavaScript objects. It was a way for us to use our imagination and creativity to build a desktop game. I wanted to do a game similar to Cards Against Humanity, but a coding version since it was an assignment for a coding class. It would require two players, and they would take turns selecting the best card. The computer would decide which card is the winner, and the player with the highest score at the end wins.</p>
+			<p>This assignment was for my JavaScript course at UC Davis. The assignment was to explore JavaScript libraries, API's, or other HTML/CSS methods to make websites more immersive and interactive. I chose to learn and use MapBox to create a locator for hydration stations on the UC Davis campus. <a href="https://www.mapbox.com" target="_blank">MapBox</a> is a JavaScript library for interactive maps that can be customized to your needs. There is a live version of this on the <a href="https://shcs.ucdavis.edu/wellness/maps" target="_blank">UC Davis Student Health and Counseling Services webpage</a>, but I wanted to try to recreate it with MapBox myself.</p>
 			<h4>Problem</h4>
-			<p>There is no online version of Cards Against Humanity.</p>
+			<p>Students need access to where hydration station locations are to refill their water bottles and/or drink water while on campus.</p>
 			<h4>Solution</h4>
-			<p>Create a simple online game of Cards Against Humanity, but with a theme of technology and programming. Two players can play together without needing to buy the physical cards.</p>
+			<p>Create a website with the buildings and location of the hydration stations on the map for students to see where the stations are.</p>
 			<h4>Goals</h4>
 			<ul>
-				<li>Manage the DOM and different states of a game in a logical flow from turn to turn</li>
-				<li>Use JavaScript objects to keep track of game data</li>
-				<li>Build the interface in a way that intrigues visitors, and also is visually cohesive</li>
+				<li>Create interactions that engage the audience</li>
+				<li>Explore new JavaScript techniques</li>
+				<li>Select a library that may support the final project (See <a href="law.html" target="_blank">Life After Waste</a>)</li>
 			</ul>
 
 			<h3>Process</h3>
 			<h4>Brainstorm</h4>
-            <p>One of the options for this assignment was to take the game of <a href="https://www.whatdowedoallday.com/pig-dice-game/" target="_blank">Pig</a> that we built with basic HTML, CSS, and JavaScript in class and add additional features and designs to it. The other option was to create a completely new game. I compiled a list of games I could make for this project:</p>
-            <ul>
-                <li>Pig Dice Game</li>
-                <li>Uno</li>
-                <li>Go Fish</li>
-                <li>Solitare</li>
-                <li>Apples to Apples</li>
-                <li>Pool</li>
-                <li>Jenga</li>
-                <li>Cards Against Humanity</li>
-                <li>Jigsaw Puzzles</li>
-                <li>BlackJack</li>
-            </ul>
-            <p>I decided on Cards Against Humanity because I enjoy playing the game, but sometimes when I want to play it, I don't have anyone who plays it with me (sounds a little sad, I know!). I found there was no online version of the game online, except for this <a href="https://www.cardsagainsthumanity.com/lab/" target="_blank">Cards Against Humanity Lab</a>, but it was online a single-player research version.</p>
+            <p>There were many suggested techniques for us to select, but from the list, I was especially interested in ThreeJS, ChartJS, and Mapbox.<br><img src="images/HSL/options.png" width="500" alt="List of some JavaScript libraries"></p>
+            <p>I decided on MapBox because it was something I have never done before, and I wanted to challenge myself with coding.</p>
 
             <h4>Research</h4>
-            <h5>Branding</h5>
-            <p>
-                Typeface: Helvetica Neue Bold<br>
-                Logo:<br>
-                <img src="images/CAH/cahtypeface.png" width="500" alt="Logo of Cards Against Humanity"><br>
-                Color scheme: Black and White<br>
-            </p>
-            <h5>Humor</h5>
-            <p>
-                To recreate the game, I wanted a similar sense of humor that Cards Against Humanity has. I looked at a <a href="https://cardsagainsthumanity.com/images/CardsAgainstHumanityold.pdf" target="_blank">printable PDF</a> of the game to get a sense of how their cards are written.
-                <img src="images/CAH/questions.png" width="300">
-                <img src="images/CAH/answers.png" width="300">
-            </p>
+            <h5>Using MapBox</h5>
+            <p>To learn how to use MapBox, I followed the <a href="https://docs.mapbox.com/help/tutorials/building-a-store-locator/" target="_blank">Store Locator</a> tutorial on their website. <br>I learned how to:
+            <ul>
+                <li>Structure the map and locations with CSS</li>
+                <li>Initialize the map with a access token</li>
+                <li>Load data into the map</li>
+                <li>Use JavaScript to add the locations into the sidebar</li>
+                <li>Make the map interactive</li>
+                <li>Customize the map</li>
+            </ul>
+            <p>This was the final product from the tutorial.<br><img src="images/HSL/tutorial.png" width="550" alt="MapBox tutorial final product"></p>
+
 
 			<h4>Digital Design</h4>
 			<p>
-                The initial design for the game was have a welcome screen for both players to put their name in. The next screen would display the rules of the game, so both players understood how it worked. The game screen would show the main card on top and the player's hand of cards on the bottom, and they would click on which card they wanted to play.<br>
-                <img src="images/CAH/cahsketch-01.png" width="350"><br>
-                <img src="images/CAH/cahsketch-02.png" width="350"><br>
-                <img src="images/CAH/cahsketch-03.png" width="350"><br>
+                This was the basic interface that I wanted to create with Mapbox: the title, locations, and the map.The user could interact with the map by selecting specific buildings to see where the refill stations were, similar to the tutorial layout.<br>
+                <img src="images/HSL/sketch.png" width="450" alt="Initial design of website"><br>
             </p>
 			
 			<h4>Development</h4>
-			<p>I used Visual Studio Code to build the site, and I used GitHub to host it. The coding took me about five days of coding to complete the game. I created the HTML first, CSS second, and JavaScript last.</p>
+			<p>From the tutorial, I used the same structure of HTML, CSS, and JavaScript to customize the Hydration Stations for my map.</p>
 			<h6>Section of HTML</h6>
-			<p>The HTML for the game was pretty simple. It only required displaying the rules, scores, names, and images of the cards. I created 15 main cards and 35 player cards, so the computer can randomly select cards.<br><img src="images/CAH/cah_html.png" width="500" alt="Screenshot of HTML"></p>
+			<p>The HTML for using MapBox was very minimal, and it only required one heading for the title of the map. I changed my code to say "UC Davis: Water Bottle Refill Stations" to fit my idea.<br><img src="images/HSL/html.png" width="500" alt="Screenshot of HTML"></p>
 			<h6>Section of CSS</h6>
-			<p>Similar to the HTML, the CSS was basic since the interface was very simple.<br><img src="images/CAH/cah_css.png" width="500" alt="Screenshot of CSS"></p>
+			<p>For the CSS, it was kept the same as the tutorial, but I changed the marker to a water drop. The color scheme was also changed in the CSS.<br><img src="images/HSL/css.png" width="500" alt="Screenshot of CSS"></p>
 			<h6>Section of JavaScript</h6>
-			<p>The JavaScript was the bulk of the entire game. It required hundreds of lines of code that took me days to write! I used JavaScript to add the player's names in the welcome screen, and it would be used throughout the game. I also added event listeners to see where the user clicked to switch out the card in their deck, and the computer would randomly generate a number between 0 and 1 which would "select" the winning card. The game would run for two rounds, and the winner would be chosen.<br><img src="images/CAH/cah_javascript.png" width="500" alt="Screenshot of JavaScript"></p>
+            <p>The data for the locations were placed in the JavaScript file to be used on the map and sidebar. For each location, it asked for the coordinates, and the properties of the location (i.e., address, state, floor). JavaScript was also used to interact with the map by moving the map or clicking on the sidebar.<br>
+                <img src="images/HSL/javascript1.png" width="500" alt="Screenshot of JavaScript"><br>
+                <img src="images/HSL/javascript2.png" width="500" alt="Screenshot of JavaScript"></p>
 
 			<h4>Final Product</h4>
 			<p>
 				<video width="320" height="240" autoplay>
-					<source src="images/CAH/CAH.mp4" type="video/mp4">
+					<source src="images/HSL/HSL.mp4" type="video/mp4">
 				</video>
 		</p>
 			
 			<h3>Takeaways</h3>
 			<h4>Reflection</h4>
-			<p>Building this game was difficult because I just learned some of these topics, and having to build hundreds of lines of code by myself was overwhelming. It did help me improve my JavaScript skills a lot because I forced myself to code and break down each functional part of the game. Even though it was challenging, finishing the game was extremely rewarding because I got positive feedback from my instructors and peers.</p>
+			<p>Using MapBox was easier than I expected when I started because their documentation is clear and understandable. Creating the tutorial helped me understand how to use the basics of the library, and I was then able to customize it to my liking. I learned that JavaScript libraries are helpful to use when coding websites because it only needs to be implemented into your code. It saves a lot of time, and it makes websites more interactive.</p>
 
 			<h4>Challenges</h4>
 			<ul>
-                <li>Exchanging the Cards<br>
-                I had problems on how to change the single card in the player's hand when they clicked on it rather than changing out the entire hand. It took a look of trial and error to fix the issue. I realized that I had to create an event listener for each card, and it would run the function to select a new card just for that card.</li>
-                <li>Selecting New Cards<br>
-                Another challenge I had was making sure the cards that the computer selected would not repeat. I wasn't able to solve the issue because I had time constraints, but I tried to delete the card from the array. However, it would create an error since the there would be an empty element. I tried to store the card array number into a second array, and have the random generator compare the two numbers. It would then generate a new number if the numbers matched.</li>
-                <li>Creating the Cards<br>
-                Doing the research on making the cards was time consuming because I had to mimick the style of humor Cards Against Humanity had. I used Adobe Illustrator to make the cards and export them as SVGs for the website.</li>
+                <li>Finding the Coordinates<br>
+                I initially had issues with the coordinates for the map because it placed the longitude first and then the latitude which was different from the traditional latitude first then longitude. When I ran the site, it would give an error in the console log saying it was out of bounds, and I realized that the ranges were reversed.</li>
+                <li>Learning MapBox<br>
+                It was challenging in the beginning because I had never used a library before, and I was unsure of how libraries work. The documentation provided by MapBox was more technical, so I would have to research what certain words or topics meant. However, I did find it rewarding to learn something new on my own.</li>
 			</ul>
 
 			<h4>Future Improvements</h4>
-			<p>I was not able to remove all the bugs in the game, so I would fix the errors in the game to have it run smoothly. My idea was to create 5 rounds, and the player with the most points would win. However, I was unable to add more rounds, but it would make the game more fun.</p>
+			<p>The functionality and features on the site are basic. In the future, I would add more details about the location like images and exact descriptions of the location.</p>
 		</arcticle>
 
 	</section>
