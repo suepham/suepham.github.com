@@ -169,7 +169,6 @@ nav ul li a:hover {
 }
 
 .feature h2 {
-	font-family: 'Inter', sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	color: #333333;
@@ -179,7 +178,6 @@ nav ul li a:hover {
 }
 
 .feature h3 {
-	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 18px;
 	padding: 10px 0px;
@@ -188,7 +186,6 @@ nav ul li a:hover {
 }
 
 .feature p {
-	font-family: 'Inter', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 2em;
@@ -199,7 +196,6 @@ nav ul li a:hover {
 .feature button {
 	padding: 10px 10px;
 	border-radius: 5px;
-	font-family: 'Inter', sans-serif;
 	font-weight: 500;
 	font-size: 13px;
 	margin: 25px 0 0 30px;
@@ -522,4 +518,187 @@ footer p {
 video {
 	height: 80%;
 	width: 80%;
+}
+
+/************* Mobile ***********/
+@media screen and (max-width: 600px) {
+
+	main {
+		text-align: center;
+	}
+	main h1 {
+		display: block;
+		padding-bottom: 0;
+		margin: 20px;
+	}
+	
+	main a {
+		text-decoration: none;
+	}
+
+	nav {
+		text-align: center;
+		float: none;
+		margin: 0;
+	}
+
+	nav ul li a {
+		margin: 0;
+		padding: 10px;
+	}
+
+	#welcome {
+		margin-top: 10px;
+		margin-bottom: 0;
+		height: 100%;
+		text-align: center;
+	}
+
+	#welcome img {
+		float: none;
+		clear: both;
+		padding: 20px 0;
+	}
+
+	#welcome #topInfo {
+		width: 100%;
+		float: none;
+		clear: both;
+		display: inline-block;
+	}
+
+	#welcome h2 {
+		font-size: 30px;
+		padding: 10px 0;
+	}
+
+	#welcome h3 {
+		font-size: 20px;
+		padding: 5px 0;
+	}
+
+	#welcome p {
+		text-align: left;
+		margin: 0 30px;
+		font-size: 14px;
+	}
+
+	#arrow {
+		display: none;
+	}
+
+	.feature {
+		width: 100%;
+		margin: 60px 0;
+	}
+
+	#featured h1 {
+		display: none;
+	}
+
+	.feature h2 {
+		font-size: 20px;
+	}
+
+	.feature p {
+		font-size: 14px;
+	}
+
+	#featureOne, #featureTwo, #featureThree, #featureFour {
+		margin: 10px;
+		width: 80%;
+	}
+
+	.feature #featureImg1, .feature #featureImg2, .feature #featureImg3, .feature #featureImg4 {
+		padding: 20px 0;
+		float: none;
+		width: 100%;
+	}
+
+	.feature #featureImg1 img, .feature #featureImg2 img, .feature #featureImg4 img {
+		width: 40%;
+	}
+
+	.feature #featureImg3 img {
+		width: 80%;
+	}
+
+	/*** contact page ****/
+	#about img {
+		float: none;
+		margin-right: 0;
+		clear: none;
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	/***** Projects *****/
+
+	.imgDiv img {
+		width: 80%;
+	}
+
+	.projectBasics {
+
+	}
+
+	#law button, #cah button, #hsl button {
+		float: none;
+		margin: 0;
+		margin-left: 20px;
+	}
+
+	h1 {
+		margin: 20px;
+	}
+
+	.projectBasics {
+		grid-template-columns: 1fr;
+		margin: 20px;
+		border-top: solid black 1px;
+	}
+
+	.projectBasics h3 {
+		margin: 10px 0;
+		font-size: 15px;
+	}
+
+	.projectBasics p {
+		font-size: 12px;
+	}
+
+	.projectInfo {
+		margin: 0 20px;
+	}
+
+	.projectInfo h3 {
+		padding: 10px 0;
+		margin-top: 15px;
+		font-size: 24px;
+	}
+
+	.projectInfo h4 {
+		position: static;
+	}
+
+	.projectInfo h5, .projectInfo p, .projectInfo ul, .projectInfo h6 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.projectInfo p, .projectInfo ul {
+		font-size: 14px;
+	}
+
+	.projectInfo ul {
+		padding-left: 20px;
+	}
+
+	.projectInfo h6 {
+		padding: 10px 0; 
+	}
+
+	.projectInfo img {
+		width: 50%;
+	}
 }
