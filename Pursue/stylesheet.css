@@ -98,6 +98,7 @@ a {
 
 #search {
     padding-top: 100px;
+    text-align: center;
 }
 
 #search #background {
@@ -197,20 +198,82 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     color: #98C1E8;
+    padding-left: 100px;
+    padding-bottom: 100px;
 }
 
 #connect article div {
-    margin-top: 150px;
-    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+#connect article div div {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#recruiter1 {
+    background-image: url("images/johnfurman.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter2 {
+    background-image: url("images/sallylin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter3 {
+    background-image: url("images/kevinjones.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter4 {
+    background-image: url("images/annamiller.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter5 {
+    background-image: url("images/marksoh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter6 {
+    background-image: url("images/sarahmeyn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter7 {
+    background-image: url("images/catherinecolon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#recruiter8 {
+    background-image: url("images/aidanyavas.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #connect article div h4 {
     text-align: center;
+    padding-top: 20px;
+    position: absolute;
 }
 
 #connect article div h5 {
     font-weight: 400;
+    padding-top: 50px;
     text-align: center;
+    position: absolute;
 }
 
 #populararticles h2 {
@@ -227,7 +290,7 @@ a {
     grid-template-columns: 325px 500px 500px;
     grid-template-areas: 
     "header header header"
-    "div para para"
+    "div para para";
 }
 
 #populararticles article h3 {
@@ -241,13 +304,31 @@ a {
 #populararticles article div {
     width: 300px;
     height: 100px;
-    border: solid black 1px;
     margin: 0px 10px 30px 0px;
     grid-area: div;
 }
 
+#article1 {
+    background-image: url("images/article1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article2 {
+    background-image: url("images/article2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#article3 {
+    background-image: url("images/article3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #populararticles article p {
     grid-area: para;
+    margin-right: 100px;
 }
 
 /*********** Footer ************/
